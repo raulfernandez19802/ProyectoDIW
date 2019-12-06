@@ -1,0 +1,344 @@
+* {
+    margin: 0px;
+    padding: 0 px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: #d9b358;
+    font-size: 3em;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: rgba(247, 249, 250, 1);
+    background: -moz-linear-gradient(top, rgba(247, 249, 250, 1) 0%, rgba(247, 249, 250, 0.86) 26%, rgba(247, 249, 250, 0.45) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247, 249, 250, 1)), color-stop(26%, rgba(247, 249, 250, 0.86)), color-stop(100%, rgba(247, 249, 250, 0.45)));
+    background: -webkit-linear-gradient(top, rgba(247, 249, 250, 1) 0%, rgba(247, 249, 250, 0.86) 26%, rgba(247, 249, 250, 0.45) 100%);
+    background: -o-linear-gradient(top, rgba(247, 249, 250, 1) 0%, rgba(247, 249, 250, 0.86) 26%, rgba(247, 249, 250, 0.45) 100%);
+    background: -ms-linear-gradient(top, rgba(247, 249, 250, 1) 0%, rgba(247, 249, 250, 0.86) 26%, rgba(247, 249, 250, 0.45) 100%);
+    background: linear-gradient(to bottom, rgba(247, 249, 250, 1) 0%, rgba(247, 249, 250, 0.86) 26%, rgba(247, 249, 250, 0.45) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f7f9fa', endColorstr='#f7f9fa', GradientType=0);
+}
+
+nav {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header img {
+    height: 70px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
+}
+
+nav li a {
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 15px 10px;
+    color: #000000;
+}
+
+.contenido {
+    width: 100%;
+    background-color: #1c1d1f;
+    text-align: center;
+    color: #d9b358;
+    padding: 0 0 110px 0;
+    margin: 0px auto;
+}
+
+.contenido img {
+    width: 100%;
+}
+
+.contenido h1 {
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #1c1d1f;
+    color: #ffffff;
+    text-align: center;
+    clear: both;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+}
+
+footer p {
+    padding: 5px;
+}
+
+.redesSociales {
+    display: block;
+    position: fixed;
+    bottom: 115px;
+    right: 10px;
+}
+
+.info {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.info p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    padding: 30px;
+    max-width: 300px;
+}
+
+.fa-beer,
+.fa-thumbs-up,
+.fa-check {
+    font-size: 2.7em;
+    display: block;
+    color: black;
+    color: white;
+    margin-bottom: 30px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.fa-beer:hover,
+.fa-thumbs-up:hover,
+.fa-check:hover {
+    opacity: 0.3;
+}
+
+.fa-twitter,
+.fa-facebook-f,
+.fa-whatsapp {
+    font-size: 1.6em;
+    display: block;
+    color: #ffffff;
+    padding: 6px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.fa-twitter:hover,
+.fa-facebook-f:hover,
+.fa-whatsapp:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.contenidoContact {
+    width: 100%;
+    background-color: #1c1d1f;
+    color: #000;
+    padding: 110px 0 110px 0;
+    margin: 0px auto;
+    text-align: center;
+}
+
+form {
+    padding: 60px;
+    max-width: 700px;
+    background-color: #E7E7E7;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    color: #525c66;
+    font-size: 1em;
+    resize: horizontal;
+}
+
+form button {
+    display: block;
+    background-color: #1c1d1f;
+    padding: 10px 45px 10px 45px;
+    border: 0;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+form button:hover {
+    background-color: #d9b358;
+    color: #000000;
+}
+
+.contenidoTabla {
+    width: 100%;
+    background-color: #1c1d1f;
+    padding: 110px 0 110px 0;
+    margin: 0px auto;
+}
+
+.contenidoTabla h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.paquete1 {
+    width: 900px;
+    border-collapse: collapse;
+}
+
+.paquete2 {
+    margin-top: 100px;
+    width: 900px;
+    border-collapse: collapse;
+}
+
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+table caption {
+    text-align: center;
+    color: #d9b358;
+    font-size: 2em;
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table * {
+    position: relative;
+}
+
+table td,
+table th {
+    padding-left: 8px;
+}
+
+table thead tr {
+    height: 60px;
+    background: #36304a;
+}
+
+table tbody tr {
+    height: 50px;
+}
+
+table tbody tr:last-child {
+    border: 0;
+}
+
+table td,
+table th {
+    text-align: left;
+}
+
+table td.l,
+table th.l {
+    text-align: right;
+}
+
+table td.c,
+table th.c {
+    text-align: center;
+}
+
+table td.r,
+table th.r {
+    text-align: center;
+}
+
+.encabezadoTabla th {
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+body tr {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.2;
+    font-weight: unset;
+}
+
+tbody tr:hover {
+    color: #555555;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.columna1 {
+    width: 160px;
+}
+
+.columna2 {
+    width: 245px;
+}
+
+.columna3 {
+    width: 110px;
+    text-align: right;
+}
+
+.columna4 {
+    width: 170px;
+    text-align: right;
+}
+
+.columna5 {
+    width: 222px;
+    text-align: right;
+    padding-right: 62px;
+}
+
+@media (max-width: 480px) {
+    .contenidoTabla {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .paquete1 {
+        width: 400px;
+    }
+    .paquete2 {
+        width: 400px;
+    }
+    .redesSociales {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {}
