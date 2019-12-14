@@ -22,13 +22,19 @@
     <meta property="og:description" content="La mejor selección." />
     <meta property="og:image" content="https://raulfernandez19802.github.io/ProyectoDIW/blob/master/img/jarraCerveza.jpg" />
     <script src="https://kit.fontawesome.com/9b9421eda3.js" crossorigin="anonymous"></script>
+    <script src="/js/video.js"></script>
+    <script src="/js/audio.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <title>Blog - BeerZone</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="img/logo/logo.png" alt="Eniun logo" width="74" height="33"></a>
+            <a href="index.html"><img id="logo" src="img/logo/logo.png" alt="Eniun logo" width="74" height="33"></a>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -46,28 +52,59 @@
         <section>
             <img src="img/jarraCerveza.jpg" alt="jarra cerveza">
             <article>
-                <h1>Titulo 1</h1>
+                <h1>Control de vídeo</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam doloribus voluptas nemo distinctio! Itaque praesentium dolorem assumenda officiis maiores placeat hic perferendis enim quo non iure blanditiis ut, quibusdam sequi eligendi
                     consequuntur ad quas? Ipsam veniam deleniti accusamus laboriosam sed itaque laborum error blanditiis officiis eligendi, totam ea ducimus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae error velit similique
                     <br> blanditiis explicabo ut, consequatur sequi itaque dolor minus quidem quia doloribus natus! Eius laborum voluptatibus magnam mollitia molestias.
                 </p>
-                <video controls>
-                    <source src="video/Beer.mp4" type="video/mp4">
-                    <source src="video/Beer2.webm" type="video/webm">
-                    <source src="video/Beer3.ogg" type="video/ogg">
+                <video controls id="videoCerveza">
+                    <source src="video/big_buck_bunny.mp4" type="video/mp4">
+                    <source src="video/big_buck_bunny.webm" type="video/webm">
+                    <source src="video/big_buck_bunny.ogg" type="video/ogg">
                 </video>
-                <br>
-                <audio controls>
-                    <source src="audio/house.mp3">
-                    <source src="audio/house.ogg">
-                </audio>
+                <nav>
+                    <input type="button" id="reiniciar" value="reiniciar" class="btn btn-outline-danger">
+                    <input type="button" id="retrasar" value="&laquo;" class="btn btn-outline-warning">
+                    <input type="button" id="play" value="&#9658;" class="btn btn-outline-primary">
+                    <input type="button" id="adelantar" value="&raquo;" class="btn btn-outline-warning">
+                    <input type="button" id="silenciar" value="silenciar" class="btn btn-outline-danger">
+                    <label>Volumen</label>
+                    <input type="button" id="menosVolumen" value="-" class="btn btn-outline-warning">
+                    <input type="button" id="masVolumen" value="+" class="btn btn-outline-warning">
+                </nav>
             </article>
             <article>
-                <h2>Titulo 1</h2>
+                <h2>Control de audio</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam doloribus voluptas nemo distinctio! Itaque praesentium dolorem assumenda officiis maiores placeat hic perferendis enim quo non iure blanditiis ut, quibusdam sequi eligendi
                     consequuntur ad quas? Ipsam veniam deleniti accusamus laboriosam sed itaque laborum error blanditiis officiis eligendi, totam ea ducimus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae error velit similique
                     <br> blanditiis explicabo ut, consequatur sequi itaque dolor minus quidem quia doloribus natus! Eius laborum voluptatibus magnam mollitia molestias.
                 </p>
+                <div class="btn-group" role="group">
+                    <button id="btn1" class="btn btn-info">Iniciar sonido</button>
+                    <button id="btn2" class="btn btn-info">Iniciar sonido</button>
+                    <button id="btn3" class="btn btn-info">Iniciar sonido</button>
+                    <button id="btn4" class="btn btn-info">Iniciar sonido</button>
+                </div>
+            </article>
+            <article>
+                <h2>Dibujo Canvas</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam doloribus voluptas nemo distinctio! Itaque praesentium dolorem assumenda officiis maiores placeat hic perferendis enim quo non iure blanditiis ut, quibusdam sequi eligendi
+                    consequuntur ad quas? Ipsam veniam deleniti accusamus laboriosam sed itaque laborum error blanditiis officiis eligendi, totam ea ducimus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae error velit similique
+                    <br> blanditiis explicabo ut, consequatur sequi itaque dolor minus quidem quia doloribus natus! Eius laborum voluptatibus magnam mollitia molestias.
+                    <script src="/js/canvas.js"></script>
+                    <canvas id="dibujo">                        
+                    </canvas>
+                </p>
+            </article>
+            <article>
+                <h2>Juego Canvas</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam doloribus voluptas nemo distinctio! Itaque praesentium dolorem assumenda officiis maiores placeat hic perferendis enim quo non iure blanditiis ut, quibusdam sequi eligendi
+                    consequuntur ad quas? Ipsam veniam deleniti accusamus laboriosam sed itaque laborum error blanditiis officiis eligendi, totam ea ducimus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae error velit similique
+                    <br> blanditiis explicabo ut, consequatur sequi itaque dolor minus quidem quia doloribus natus! Eius laborum voluptatibus magnam mollitia molestias.
+                </p>
+                <script src="/js/juegoCanvas.js"></script>
+                <canvas id="juego">                        
+                    </canvas>
             </article>
         </section>
         <aside>

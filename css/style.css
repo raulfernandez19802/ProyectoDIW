@@ -87,7 +87,6 @@ body {
 
 footer {
     width: 100%;
-    height: 100px;
     background-color: #1c1d1f;
     color: #ffffff;
     text-align: center;
@@ -102,10 +101,6 @@ footer a {
 
 footer a:visited {
     color: #d9b358;
-}
-
-footer p {
-    padding: 5px;
 }
 
 .redesSociales {
@@ -414,6 +409,40 @@ aside h4 {
 .contenidoBlog footer {
     width: 70%;
     clear: both;
+}
+
+@keyframes animacionLogo {
+    from {
+        -webkit-transform: scale(.0);
+        transform: scale(.0);
+    }
+    50% {
+        -webkit-transform: scale(.10);
+        transform: scale(.10);
+    }
+    to {
+        -webkit-transform: scale(.0);
+        transform: scale(.0);
+    }
+}
+
+.logo {
+    animation-duration: 5s;
+    animation-name: animacionLogo;
+    animation-iteration-count: infinite;
+}
+
+#dibujo {
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+}
+
+#juego {
+    width: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 @media screen and (max-width: 480px) {
